@@ -1,3 +1,106 @@
+body {
+  font-family: "Roboto", cursive;
+}
 
+.header__logo {
+  font-family: "Shrikhand", cursive;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 1rem;
+  font-size: 1.2rem;
+  box-shadow: inset 0 9px 8px -10px grey;
+}
+.localisation__icon {
+  margin-right: 1rem;
+}
+.localisation__text {
+  font-weight: bold;
+}
+
+.howTo {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.howTo__lists {
+  list-style-type: none;
+  counter-reset: compteListe;
+  padding-left: 0;
+  position: relative;
+}
+.howTo__list::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background-color: #9356DC;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0rem;
+}
+.howTo__list {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.7rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+}
+.howTo__icon {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.howTo__text {
+  font-weight: 500;
+}
+
+.hero__button {
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+}
+.header__logo {
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 2rem 4rem 2rem;
+  background-color: #f6f6f6;
+}
+.hero__title {
+  margin: 0rem 1rem;
+}
+.hero__text {
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */

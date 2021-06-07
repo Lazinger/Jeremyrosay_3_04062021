@@ -1,0 +1,15 @@
+@import '../abstracts/variables';
+
+body {
+    font-family: $font-text;
+}
+.header {
+    &__logo {
+        font-family: $font-logo;
+    }
+}
+.footer {
+    &__logo {
+        font-family: $font-logo;
+    }
+}
