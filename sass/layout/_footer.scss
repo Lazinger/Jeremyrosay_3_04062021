@@ -1,0 +1,29 @@
+.footer {
+    color: #fff;
+    background-color: $dark-grey;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &__logo {
+        margin-top: 0rem;
+        padding-top: 0.5rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    &__lists {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__lists a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &__lists li {
+        list-style-type: none;
+        margin-bottom: 0.3rem;
+    }
+    &__icon {
+        width: 1rem;
+        margin-right: 0.5rem;
+    }
+}

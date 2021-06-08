@@ -8,6 +8,6 @@
         text-decoration: none;
         background: linear-gradient($secondary-color, $primary-color);
         border-radius: 2rem;
-        box-shadow: 0rem 0.2rem 10px 0px hsl(0, 0%, 75%);
+        box-shadow: $shadow;
     }
 }
