@@ -1,13 +1,41 @@
-body {
-  font-family: "Roboto", cursive;
+.header {
+  text-align: center;
+  padding: 1rem;
 }
-
 .header__logo {
+  margin: 0;
   font-family: "Shrikhand", cursive;
 }
 
+.footer {
+  color: #fff;
+  background-color: #353535;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .footer__logo {
+  margin-top: 0rem;
+  padding-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   font-family: "Shrikhand", cursive;
+}
+.footer__lists {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__lists a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__lists li {
+  list-style-type: none;
+  margin-bottom: 0.3rem;
+}
+.footer__icon {
+  width: 1rem;
+  margin-right: 0.5rem;
 }
 
 .container {
@@ -28,6 +56,30 @@ body {
 }
 .localisation__text {
   font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 2rem 4rem 2rem;
+  background-color: #f6f6f6;
+}
+.hero__title {
+  margin: 0rem 1rem;
+}
+.hero__text {
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.hero__button {
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
 }
 
 .howTo {
@@ -104,7 +156,8 @@ body {
 }
 .card__bottom {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
 .card__bottom__text {
   margin-left: 1rem;
@@ -116,75 +169,19 @@ body {
   margin-bottom: 0.2rem;
   font-weight: 600;
 }
-.card a {
-  text-decoration: none;
+.card__bottom__button {
+  position: absolute;
+  right: 1rem;
 }
-
-.hero__button {
-  padding: 1rem 1rem;
-  margin-top: 1rem;
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 2rem;
-  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
-}
-
-body {
-  margin: 0;
-}
-
-.header {
-  text-align: center;
-  padding: 1rem;
-}
-.header__logo {
-  margin: 0;
-}
-
-.hero {
-  text-align: center;
-  padding: 2rem 2rem 4rem 2rem;
-  background-color: #f6f6f6;
-}
-.hero__title {
-  margin: 0rem 1rem;
-}
-.hero__text {
-  font-weight: 300;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.footer {
-  color: #fff;
-  background-color: #353535;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.footer__logo {
-  margin-top: 0rem;
-  padding-top: 0.5rem;
-  font-weight: 500;
+.card__bottom__button--empty {
   font-size: 1.5rem;
 }
-.footer__lists {
+.card__bottom__button--full {
+  position: absolute;
+  z-index: -1;
+}
+.card a {
   text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-.footer__lists a {
-  color: #fff;
-  text-decoration: none;
-}
-.footer__lists li {
-  list-style-type: none;
-  margin-bottom: 0.3rem;
-}
-.footer__icon {
-  width: 1rem;
-  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

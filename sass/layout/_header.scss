@@ -1,7 +1,9 @@
+@import '../abstracts/variables';
 .header {
     text-align: center;
     padding: 1rem;
     &__logo {
         margin: 0;
+        font-family: $font-logo;
     }
 }
