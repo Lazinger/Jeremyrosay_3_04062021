@@ -38,6 +38,11 @@
   margin-right: 0.5rem;
 }
 
+body {
+  font-family: "Roboto", cursive;
+  margin: 0;
+}
+
 .container {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -173,15 +178,38 @@
   position: absolute;
   right: 1rem;
 }
-.card__bottom__button--empty {
-  font-size: 1.5rem;
-}
-.card__bottom__button--full {
-  position: absolute;
-  z-index: -1;
-}
 .card a {
   text-decoration: none;
+}
+
+.label__checkbox {
+  display: none;
+}
+.label__checkbox:checked + .icon {
+  opacity: 1;
+  transform: scale(0);
+  color: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-stroke: 0;
+  animation: icon 0.3s cubic-bezier(1, 0.008, 0.565, 1.65) 0.1s 1 forwards;
+}
+
+i.icon {
+  opacity: 1;
+  font-size: 2rem;
+  color: #fff;
+  transition: opacity 0.3s 0.1s ease;
+  -webkit-text-stroke: 3px black;
+}
+
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
