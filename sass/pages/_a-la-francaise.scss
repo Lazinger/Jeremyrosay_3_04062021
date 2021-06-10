@@ -1,0 +1,42 @@
+.header {
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    &__icon {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.8rem;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+.menu {
+    background-color: $light-grey;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin-top: -4rem;
+    position: relative;
+
+    &__text {
+        position: relative;
+        padding: 1rem 1rem 0 1rem;
+        
+
+    }
+    &__title {
+        font-weight: 500;
+        font-family: $font-logo;
+        font-size: 1.8rem;
+        &__likeButton {
+                position: absolute;
+                right: 1.5rem;
+                top: 2.5rem;
+        }
+    }
+    i {
+        color: $light-grey;
+ 
+    }
+}
