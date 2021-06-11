@@ -307,4 +307,291 @@ i.likeButton__icon {
   padding-bottom: 4rem;
 }
 
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.header__icon {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.8rem;
+}
+.header__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: -4rem;
+  position: relative;
+}
+.menu__text {
+  position: relative;
+  padding: 1rem 1rem 0 1rem;
+}
+.menu__title {
+  font-weight: 500;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.menu__title__likeButton {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.menu i {
+  color: #f6f6f6;
+}
+.menu__button {
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+}
+
+.submenu {
+  padding: 1rem;
+}
+.submenu__subtitle {
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+}
+.submenu__subtitle::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.submenu__content {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.submenu__content__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.submenu__content__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.submenu__content__price {
+  font-weight: bold;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.header__icon {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.8rem;
+}
+.header__img {
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: -4rem;
+  position: relative;
+}
+.menu__text {
+  position: relative;
+  padding: 1rem 1rem 0 1rem;
+}
+.menu__title {
+  font-weight: 500;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.menu__title__likeButton {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.menu i {
+  color: #f6f6f6;
+}
+.menu__button {
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+}
+
+.submenu {
+  padding: 1rem;
+}
+.submenu__subtitle {
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+}
+.submenu__subtitle::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.submenu__content {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.submenu__content__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.submenu__content__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.submenu__content__price {
+  font-weight: bold;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.header__icon {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.8rem;
+}
+.header__img {
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: -4rem;
+  position: relative;
+}
+.menu__text {
+  position: relative;
+  padding: 1rem 1rem 0 1rem;
+}
+.menu__title {
+  font-weight: 500;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.menu__title__likeButton {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.menu i {
+  color: #f6f6f6;
+}
+.menu__button {
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+}
+
+.submenu {
+  padding: 1rem;
+}
+.submenu__subtitle {
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+}
+.submenu__subtitle::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.submenu__content {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.submenu__content__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.submenu__content__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.submenu__content__price {
+  font-weight: bold;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
