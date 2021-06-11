@@ -251,9 +251,14 @@ i.likeButton__icon {
   color: #f6f6f6;
 }
 .menu__button {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 4rem;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
 }
 
 .submenu {
@@ -294,6 +299,12 @@ i.likeButton__icon {
 }
 .submenu__content__price {
   font-weight: bold;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
