@@ -29,14 +29,60 @@
         font-weight: 500;
         font-family: $font-logo;
         font-size: 1.8rem;
+        margin-top: 0.5rem;
         &__likeButton {
                 position: absolute;
                 right: 1.5rem;
-                top: 2.5rem;
+                top: 1.5rem;
         }
     }
     i {
         color: $light-grey;
- 
+    } 
+    &__button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 4rem;
     }
+}
+
+.submenu {
+    padding: 1rem;
+    &__subtitle {
+        font-weight: 400;
+        padding-bottom: 0.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        position: relative;
+        &::after {
+            content: '';
+            width: 3rem;
+            height: 0.2rem;
+            background-color: $tertiary-color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__content {
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: $shadow;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        &__title {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+        &__price {
+            font-weight: bold;
+        }
+    }
+
 }
