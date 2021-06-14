@@ -212,6 +212,14 @@ i.likeButton__icon {
     transform: scale(1);
   }
 }
+@keyframes submenuAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .header a {
   text-decoration: none;
   color: #000;
@@ -289,6 +297,9 @@ i.likeButton__icon {
   padding: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  animation: submenuAnimation 0.6s;
+  transform: scale(0);
+  animation-fill-mode: both;
 }
 .submenu__content__title {
   margin-top: 0;
@@ -307,6 +318,22 @@ i.likeButton__icon {
   display: flex;
   justify-content: center;
   padding-bottom: 4rem;
+}
+
+.time-0 {
+  animation-delay: 0s;
+}
+
+.time-1 {
+  animation-delay: 0.1s;
+}
+
+.time-2 {
+  animation-delay: 0.2s;
+}
+
+.time-3 {
+  animation-delay: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
