@@ -6,6 +6,8 @@
         transform: scale(1);
     }
 }
+
+
 .header {
     a {
         text-decoration: none;
@@ -81,6 +83,7 @@
         }
     }
     &__content {
+        cursor: pointer;
         background-color: #fff;
         border-radius: 1rem;
         box-shadow: $shadow;
@@ -90,19 +93,63 @@
         animation: submenuAnimation 0.6s;
         transform: scale(0);
         animation-fill-mode: both;
+        display: flex;
+        overflow: hidden;
+        
+
+        &__main {
+            flex: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
         &__title {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             margin-top: 0;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
         }
         &__text {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+            margin: 0;
         }
         &__price {
+            padding-left: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
             font-weight: bold;
         }
+        &:hover .submenu__validation {
+            margin-right: -1rem;
+        }
     }
+    &__validation {
+        width: 5rem;
+        margin-top: -1rem;
+        margin-right: -6rem;
+        margin-bottom: -1rem;
+        margin-left: 1rem;
+        background-color: $tertiary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        i {
+            font-size: 1.7rem;    
+        }
+    }
+    
 }
 .container__button {
         display: flex;
@@ -122,4 +169,3 @@
 .time-3 {
     animation-delay: 0.3s;
 }
-

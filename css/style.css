@@ -291,6 +291,7 @@ i.likeButton__icon {
   bottom: 0;
 }
 .submenu__content {
+  cursor: pointer;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
@@ -300,18 +301,58 @@ i.likeButton__icon {
   animation: submenuAnimation 0.6s;
   transform: scale(0);
   animation-fill-mode: both;
+  display: flex;
+  overflow: hidden;
+}
+.submenu__content__main {
+  flex: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .submenu__content__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 .submenu__content__text {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
 }
 .submenu__content__price {
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   font-weight: bold;
+}
+.submenu__content:hover .submenu__validation {
+  margin-right: -1rem;
+}
+.submenu__validation {
+  width: 5rem;
+  margin-top: -1rem;
+  margin-right: -6rem;
+  margin-bottom: -1rem;
+  margin-left: 1rem;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submenu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+.submenu__icon i {
+  font-size: 1.7rem;
 }
 
 .container__button {
