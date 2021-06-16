@@ -126,6 +126,7 @@
         }
         &:hover .submenu__validation {
             margin-right: -1rem;
+
         }
     }
     &__validation {
@@ -138,6 +139,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     &__icon {
         display: flex;
@@ -145,6 +147,7 @@
         justify-content: center;
         width: 2rem;
         height: 2rem;
+
         i {
             font-size: 1.7rem;    
         }
