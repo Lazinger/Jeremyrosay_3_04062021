@@ -117,7 +117,7 @@
 }
 
 
-// checked //
+// not checked //
 .checkbox__animation {
     width: 100%;
     display: none;
@@ -131,6 +131,8 @@
         
     }
 }
+
+// checked // 
 .checkbox__animation:checked {
     ~ .content__wrapper {
         width: 80%;
