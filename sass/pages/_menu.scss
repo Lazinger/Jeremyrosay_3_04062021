@@ -1,11 +1,4 @@
-@keyframes submenuAnimation {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1);
-    }
-}
+@import '../abstracts/keyframes';
 
 
 .header {
@@ -26,31 +19,12 @@
     }
 }
 .menu {
+    width: 100%;
     background-color: $light-grey;
     border-radius: 1.5rem 1.5rem 0 0;
     margin-top: -4rem;
-    position: relative;
-
-    &__text {
-        position: relative;
-        padding: 1rem 1rem 0 1rem;
-        
-
-    }
-    &__title {
-        font-weight: 500;
-        font-family: $font-logo;
-        font-size: 1.8rem;
-        margin-top: 0.5rem;
-        &__likeButton {
-                position: absolute;
-                right: 1.5rem;
-                top: 1.5rem;
-        }
-    }
-    i {
-        color: $light-grey;
-    }
+    position: relative; 
+    
     &__button {
         padding: 1rem 3rem;
         margin-top: 1rem;
@@ -61,12 +35,30 @@
         border-radius: 2rem;
         box-shadow: $shadow;
     }
-    
 }
-
+.title {
+    position: relative;
+    padding: 1rem 1rem 0 1rem;
+    &__text {
+        font-weight: 500;
+        font-family: $font-logo;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    &__likeButton {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        i {
+            color: $light-grey;
+        }
+}
+}
 .submenu {
+
     padding: 1rem;
-    &__subtitle {
+
+    &__title {
         font-weight: 400;
         padding-bottom: 0.5rem;
         text-transform: uppercase;
@@ -82,78 +74,78 @@
             bottom: 0;
         }
     }
-    &__content {
+    &__container {
         cursor: pointer;
         background-color: #fff;
         border-radius: 1rem;
         box-shadow: $shadow;
-        padding: 1rem;
         margin-bottom: 1rem;
         margin-top: 1rem;
         animation: submenuAnimation 0.6s;
         transform: scale(0);
         animation-fill-mode: both;
-        display: flex;
         overflow: hidden;
-        
+    } 
+}
 
-        &__main {
-            flex: auto;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        &__title {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            margin-top: 0;
-            margin-bottom: 0.3rem;
-        }
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &__wrapper {
+
+        display: flex;
+        width: 80%;
+        padding: 1rem;
+
         &__text {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            
-            margin: 0;
+            flex: auto;
         }
         &__price {
-            padding-left: 0.5rem;
             display: flex;
-            justify-content: flex-end;
             align-items: flex-end;
-            font-weight: bold;
-        }
-        &:hover .submenu__validation {
-            margin-right: -1rem;
-
+            
         }
     }
-    &__validation {
-        width: 5rem;
-        margin-top: -1rem;
-        margin-right: -6rem;
-        margin-bottom: -1rem;
-        margin-left: 1rem;
-        background-color: $tertiary-color;
+    &__logo {
+        width: 20%;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+
+// checked //
+.checkbox__animation {
+    width: 100%;
+    display: none;
+    ~ .content__wrapper {
+        width: 100%;
         
     }
-    &__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2rem;
-        height: 2rem;
-
-        i {
-            font-size: 1.7rem;    
-        }
+    ~ .content__logo {
+        width: 0%;
+        transform: scale(0);
+        
     }
-    
 }
+.checkbox__animation:checked {
+    ~ .content__wrapper {
+        width: 80%;
+    }
+    ~ .content__logo {
+        
+        width: 20%;
+        background-color: $tertiary-color;
+        color: #fff;
+        font-size: 1.5rem;
+        transform: scale(1);
+    }
+}
+
+
 .container__button {
         display: flex;
         justify-content: center;
