@@ -220,9 +220,11 @@ i.likeButton__icon {
 @keyframes submenuAnimation {
   from {
     transform: scale(0);
+    opacity: 0;
   }
   to {
     transform: scale(1);
+    opacity: 1;
   }
 }
 .header a {
@@ -317,7 +319,7 @@ i.likeButton__icon {
 }
 .content__wrapper {
   display: flex;
-  width: 80%;
+  width: 100%;
   padding: 1rem;
 }
 .content__wrapper__text {
@@ -328,22 +330,20 @@ i.likeButton__icon {
   align-items: flex-end;
 }
 .content__logo {
-  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  background-color: #99E2D0;
+  font-size: 1.5rem;
+  width: 0%;
+  transform: scale(0, 1);
+  transition: transform 0.5s;
 }
 
 .checkbox__animation {
   width: 100%;
   display: none;
-}
-.checkbox__animation ~ .content__wrapper {
-  width: 100%;
-}
-.checkbox__animation ~ .content__logo {
-  width: 0%;
-  transform: scale(0);
 }
 
 .checkbox__animation:checked ~ .content__wrapper {
@@ -354,7 +354,13 @@ i.likeButton__icon {
   background-color: #99E2D0;
   color: #fff;
   font-size: 1.5rem;
-  transform: scale(1);
+  transform-origin: right;
+  transform: scale(1, 1);
+  transition: transform 0.5s;
+}
+.checkbox__animation:checked ~ .content__logo i {
+  transform: rotate(-1turn);
+  transition: transform 500ms ease-in-out;
 }
 
 .container__button {

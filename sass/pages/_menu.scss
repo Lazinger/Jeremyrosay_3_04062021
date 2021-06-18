@@ -89,6 +89,7 @@
 }
 
 .content {
+    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -96,7 +97,7 @@
     &__wrapper {
 
         display: flex;
-        width: 80%;
+        width: 100%;
         padding: 1rem;
 
         &__text {
@@ -109,10 +110,16 @@
         }
     }
     &__logo {
-        width: 20%;
+        
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #fff;
+        background-color: $tertiary-color;
+        font-size: 1.5rem;
+        width: 0%;
+        transform: scale(0,1);
+        transition: transform 0.5s;
     }
 }
 
@@ -120,20 +127,12 @@
 // not checked //
 .checkbox__animation {
     width: 100%;
-    display: none;
-    ~ .content__wrapper {
-        width: 100%;
-        
-    }
-    ~ .content__logo {
-        width: 0%;
-        transform: scale(0);
-        
-    }
+    display: none;  
 }
 
 // checked // 
 .checkbox__animation:checked {
+
     ~ .content__wrapper {
         width: 80%;
     }
@@ -143,7 +142,16 @@
         background-color: $tertiary-color;
         color: #fff;
         font-size: 1.5rem;
-        transform: scale(1);
+        transform-origin: right;
+        transform: scale(1, 1);
+        transition: transform 0.5s;
+        
+        
+        i {
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
+        }
+       
     }
 }
 
