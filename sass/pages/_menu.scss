@@ -81,9 +81,7 @@
         box-shadow: $shadow;
         margin-bottom: 1rem;
         margin-top: 1rem;
-        animation: submenuAnimation 0.6s;
-        transform: scale(0);
-        animation-fill-mode: both;
+        animation: submenuAnimation 0.6s, fadeIn 2s;
         overflow: hidden;
     } 
 }
@@ -118,7 +116,6 @@
         background-color: $tertiary-color;
         font-size: 1.5rem;
         width: 0%;
-        transform: scale(0,1);
         transition: transform 0.5s;
     }
 }
@@ -130,28 +127,46 @@
     display: none;  
 }
 
+
+.checkbox__animation:not(:checked) {
+
+    ~ .content__wrapper {
+        width: 100%;
+        transition: width 0.5s;
+        
+    }
+    ~ .content__logo {
+        width: 0%;
+        background-color: $tertiary-color;
+        color: #fff;
+        font-size: 1.5rem;
+        transform-origin: right;
+        transform: scale(0, 1);
+        animation: validationBar-unchecked 0.5s;
+        i {
+            transform: rotate(1turn);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+}
 // checked // 
 .checkbox__animation:checked {
 
     ~ .content__wrapper {
         width: 80%;
+        transition: width 0.5s;
     }
     ~ .content__logo {
-        
+        animation: validationBar 0.5s;
         width: 20%;
         background-color: $tertiary-color;
         color: #fff;
         font-size: 1.5rem;
         transform-origin: right;
-        transform: scale(1, 1);
-        transition: transform 0.5s;
-        
-        
         i {
             transform: rotate(-1turn);
-            transition: transform 500ms ease-in-out;
+            transition: transform 0.5s ease-in-out;
         }
-       
     }
 }
 
@@ -172,5 +187,6 @@
     animation-delay: 0.2s;
 }
 .time-3 {
+    
     animation-delay: 0.3s;
 }
