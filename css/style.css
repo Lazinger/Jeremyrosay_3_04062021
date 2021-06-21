@@ -1,4 +1,119 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes submenuAnimation {
+  from {
+    transform: scale(0);
+    transform: translateY(4rem);
+  }
+  to {
+    transform: scale(1);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes validationBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes validationBar-unchecked {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 0%;
+  }
+}
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.likeButton__checkbox {
+  display: none;
+}
+.likeButton__checkbox:checked + .likeButton__icon {
+  opacity: 1;
+  transform: scale(0);
+  -webkit-text-stroke: 0;
+  animation: icon 0.3s cubic-bezier(1, 0.008, 0.565, 1.65) 0.1s 1 forwards;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i.likeButton__icon {
+  opacity: 1;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: opacity 0.3s 0.1s ease;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero__button {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.hero__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loading 0.01s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading__circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+  border: 1rem solid #9356DC;
+  border-top-color: #FF79DA;
+  animation: circle 0.8s ease infinite;
+}
+
+@keyframes loading {
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
 .header {
   text-align: center;
   padding: 1rem;
@@ -82,16 +197,6 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
-.hero__button {
-  padding: 1rem 1rem;
-  margin-top: 1rem;
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 2rem;
-  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
-}
 
 .howTo {
   padding-top: 2rem;
@@ -127,7 +232,7 @@ body {
   padding: 1.5rem 1rem;
   margin-bottom: 1.5rem;
   margin-left: 0.7rem;
-  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .howTo__icon {
   padding-left: 1.5rem;
@@ -145,7 +250,7 @@ body {
 
 .card {
   border-radius: 1rem;
-  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 1.5rem;
   position: relative;
   background-color: #fff;
@@ -188,41 +293,14 @@ body {
   text-decoration: none;
 }
 
-.likeButton__checkbox {
-  display: none;
-}
-.likeButton__checkbox:checked + .likeButton__icon {
-  opacity: 1;
-  transform: scale(0);
-  color: #9356DC;
-  -webkit-text-stroke: 0;
-  animation: icon 0.3s cubic-bezier(1, 0.008, 0.565, 1.65) 0.1s 1 forwards;
-}
-
-i.likeButton__icon {
-  opacity: 1;
-  font-size: 1.5rem;
-  color: #fff;
-  transition: opacity 0.3s 0.1s ease;
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.6);
-}
-
-@keyframes icon {
-  from {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 @keyframes submenuAnimation {
   from {
     transform: scale(0);
+    transform: translateY(4rem);
   }
   to {
     transform: scale(1);
+    transform: translateY(0);
   }
 }
 @keyframes fadeIn {
@@ -249,6 +327,96 @@ i.likeButton__icon {
     width: 0%;
   }
 }
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes submenuAnimation {
+  from {
+    transform: scale(0);
+    transform: translateY(4rem);
+  }
+  to {
+    transform: scale(1);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes validationBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes validationBar-unchecked {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 0%;
+  }
+}
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.likeButton__checkbox {
+  display: none;
+}
+.likeButton__checkbox:checked + .likeButton__icon {
+  opacity: 1;
+  transform: scale(0);
+  -webkit-text-stroke: 0;
+  animation: icon 0.3s cubic-bezier(1, 0.008, 0.565, 1.65) 0.1s 1 forwards;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i.likeButton__icon {
+  opacity: 1;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: opacity 0.3s 0.1s ease;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero__button {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.hero__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
 .header a {
   text-decoration: none;
   color: #000;
@@ -280,7 +448,14 @@ i.likeButton__icon {
   text-decoration: none;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 2rem;
-  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .title {
@@ -325,11 +500,27 @@ i.likeButton__icon {
   cursor: pointer;
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 0rem 0.2rem 10px 0px #bfbfbf;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
   margin-top: 1rem;
   animation: submenuAnimation 0.6s, fadeIn 2s;
   overflow: hidden;
+}
+
+.time-0 {
+  animation-delay: 0s;
+}
+
+.time-1 {
+  animation-delay: 0.1s;
+}
+
+.time-2 {
+  animation-delay: 0.2s;
+}
+
+.time-3 {
+  animation-delay: 0.3s;
 }
 
 .content {
@@ -398,28 +589,6 @@ i.likeButton__icon {
 .checkbox__animation:checked ~ .content__logo i {
   transform: rotate(-1turn);
   transition: transform 0.5s ease-in-out;
-}
-
-.container__button {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 4rem;
-}
-
-.time-0 {
-  animation-delay: 0s;
-}
-
-.time-1 {
-  animation-delay: 0.1s;
-}
-
-.time-2 {
-  animation-delay: 0.2s;
-}
-
-.time-3 {
-  animation-delay: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

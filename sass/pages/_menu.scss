@@ -1,4 +1,6 @@
 @import '../abstracts/keyframes';
+@import '../abstracts/variables';
+@import '../components/buttons';
 
 
 .header {
@@ -36,6 +38,14 @@
         box-shadow: $shadow;
     }
 }
+
+.container__button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
 .title {
     position: relative;
     padding: 1rem 1rem 0 1rem;
@@ -52,7 +62,7 @@
         i {
             color: $light-grey;
         }
-}
+    }
 }
 .submenu {
 
@@ -84,6 +94,19 @@
         animation: submenuAnimation 0.6s, fadeIn 2s;
         overflow: hidden;
     } 
+}
+
+.time-0 {
+    animation-delay: 0s;
+}
+.time-1 {
+    animation-delay: 0.1s;
+}
+.time-2 {
+    animation-delay: 0.2s;
+}
+.time-3 {
+    animation-delay: 0.3s;
 }
 
 .content {
@@ -171,22 +194,6 @@
 }
 
 
-.container__button {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 4rem;
-}
 
-.time-0 {
-    animation-delay: 0s;
-}
-.time-1 {
-    animation-delay: 0.1s;
-}
-.time-2 {
-    animation-delay: 0.2s;
-}
-.time-3 {
-    
-    animation-delay: 0.3s;
-}
+
+

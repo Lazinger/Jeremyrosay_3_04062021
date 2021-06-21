@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+
+
+.loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loading 0.01s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    z-index: 10;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    &__circle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 4rem;
+        border: 1rem solid $primary-color;
+        border-top-color: $secondary-color;
+        animation: circle 0.8s ease infinite;
+
+    }
+
+}
+
+@keyframes loading {
+    to {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+@keyframes circle {
+    to {
+        transform: rotate(1turn);
+    }
+}
