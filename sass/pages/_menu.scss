@@ -120,9 +120,24 @@
         display: flex;
         width: 100%;
         padding: 1rem;
+        overflow: hidden;
+        
 
         &__text {
             flex: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            h4 {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            p {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
         }
         &__price {
             display: flex;
