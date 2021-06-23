@@ -82,6 +82,9 @@
     background-color: $light-grey;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    &__title {
+        padding-bottom: 2rem;
+    }
 }
 
 .card {

@@ -247,6 +247,9 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.restaurant__title {
+  padding-bottom: 2rem;
+}
 
 .card {
   border-radius: 1rem;
