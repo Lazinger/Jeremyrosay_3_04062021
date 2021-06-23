@@ -291,6 +291,7 @@ body {
 .card__bottom__button {
   position: absolute;
   right: 1rem;
+  bottom: 1.5rem;
 }
 .card a {
   text-decoration: none;
@@ -575,7 +576,6 @@ i.likeButton__icon {
 
 .checkbox__animation:not(:checked) ~ .content__wrapper {
   width: 100%;
-  transition: width 0.5s;
 }
 .checkbox__animation:not(:checked) ~ .content__logo {
   width: 0%;
