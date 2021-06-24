@@ -501,6 +501,7 @@ i.likeButton__icon {
   bottom: 0;
 }
 .submenu__container {
+  display: flex;
   cursor: pointer;
   background-color: #fff;
   border-radius: 1rem;
@@ -544,17 +545,19 @@ i.likeButton__icon {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.content__wrapper__text h4 {
+.content__title {
+  font-weight: bold;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.content__wrapper__text p {
+.content__text {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.content__wrapper__price {
+.content__price {
+  font-weight: bold;
   display: flex;
   align-items: flex-end;
 }
@@ -574,7 +577,7 @@ i.likeButton__icon {
   display: none;
 }
 
-.checkbox__animation:not(:checked) ~ .content__wrapper {
+.checkbox__animation:not(:checked) + .content__wrapper {
   width: 100%;
 }
 .checkbox__animation:not(:checked) ~ .content__logo {
@@ -591,7 +594,7 @@ i.likeButton__icon {
   transition: transform 0.5s ease-in-out;
 }
 
-.checkbox__animation:checked ~ .content__wrapper {
+.checkbox__animation:checked + .content__wrapper {
   width: 80%;
   transition: width 0.5s;
 }
