@@ -532,6 +532,7 @@ i.likeButton__icon {
   width: 100%;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 .content__wrapper {
   display: flex;
