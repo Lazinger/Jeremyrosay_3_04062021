@@ -3,6 +3,10 @@
 @import '../components/buttons';
 
 
+.wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .header {
     a {
         text-decoration: none;
@@ -223,6 +227,20 @@
             transition: transform 0.5s ease-in-out;
         }
     }
+}
+
+@media screen and (min-width: 64rem) {
+    .menu {
+        max-width: 64rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: $shadow;
+    }
+    .wrapper {
+        max-width: 64rem;
+        margin: auto;
+    }
+    
 }
 
 

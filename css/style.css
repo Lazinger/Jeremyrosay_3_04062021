@@ -164,7 +164,7 @@ body {
   margin: 0;
 }
 
-.container {
+.wrapper {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -297,6 +297,28 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 64rem) {
+  .howTo__title {
+    max-width: 30rem;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+  .howTo__lists {
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  .wrapper {
+    max-width: 64rem;
+    margin: auto;
+  }
+
+  .card {
+    max-width: 29rem;
+    display: inline-block;
+    margin: 1rem;
+  }
+}
 @keyframes submenuAnimation {
   from {
     transform: scale(0);
@@ -419,6 +441,11 @@ i.likeButton__icon {
 .hero__button:hover {
   filter: brightness(1.1);
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .header a {
@@ -610,6 +637,20 @@ i.likeButton__icon {
 .checkbox__animation:checked ~ .content__logo i {
   transform: rotate(-1turn);
   transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 64rem) {
+  .menu {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .wrapper {
+    max-width: 64rem;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

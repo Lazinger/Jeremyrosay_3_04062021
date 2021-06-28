@@ -1,7 +1,8 @@
 @import '../abstracts/variables';
 @import '../base/reset';
 
-.container {
+
+.wrapper {
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -136,4 +137,25 @@
 
 
  
-
+@media screen and (min-width: 64rem) {
+    .howTo {
+        &__title {
+            max-width: 30rem;
+            margin: auto;
+            padding-bottom: 2rem;
+        }
+        &__lists {
+            max-width: 30rem;
+            margin: auto;
+        }
+    }
+    .wrapper {
+        max-width: 64rem;
+        margin: auto;
+    }
+    .card {
+        max-width: 29rem;
+        display: inline-block;
+        margin: 1rem;
+    }
+}
