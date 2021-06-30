@@ -17,22 +17,6 @@
     opacity: 1;
   }
 }
-@keyframes validationBar__left-check {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 75%;
-  }
-}
-@keyframes validationBar__left-unchecked {
-  from {
-    width: 75%;
-  }
-  to {
-    width: 100%;
-  }
-}
 @keyframes icon {
   from {
     opacity: 0;
@@ -337,22 +321,6 @@ body {
     opacity: 1;
   }
 }
-@keyframes validationBar__left-check {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 75%;
-  }
-}
-@keyframes validationBar__left-unchecked {
-  from {
-    width: 75%;
-  }
-  to {
-    width: 100%;
-  }
-}
 @keyframes icon {
   from {
     opacity: 0;
@@ -379,22 +347,6 @@ body {
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes validationBar__left-check {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 75%;
-  }
-}
-@keyframes validationBar__left-unchecked {
-  from {
-    width: 75%;
-  }
-  to {
-    width: 100%;
   }
 }
 @keyframes icon {
@@ -544,15 +496,15 @@ i.likeButton__icon {
 }
 
 .time-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .time-2 {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .time-3 {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 
 .content {
@@ -609,14 +561,14 @@ i.likeButton__icon {
 
 .checkbox__animation:not(:checked) + .content {
   width: 100%;
+  transition: width 1s;
 }
 .checkbox__animation:not(:checked) ~ .content__logo {
   width: 0%;
   background-color: #99E2D0;
   color: #fff;
   font-size: 1.5rem;
-  transform-origin: right;
-  transform: scale(0, 1);
+  transition: width 1s;
 }
 .checkbox__animation:not(:checked) ~ .content__logo i {
   transform: rotate(1turn);
@@ -625,7 +577,7 @@ i.likeButton__icon {
 
 .checkbox__animation:checked + .content {
   width: 75%;
-  animation: validationBar__left-check 0.5s;
+  transition: width 1s;
 }
 .checkbox__animation:checked ~ .content__logo {
   width: 25%;
@@ -633,6 +585,7 @@ i.likeButton__icon {
   color: #fff;
   font-size: 1.5rem;
   transform-origin: right;
+  transition: width 1s;
 }
 .checkbox__animation:checked ~ .content__logo i {
   transform: rotate(-1turn);

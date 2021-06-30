@@ -113,13 +113,13 @@
     animation-delay: 0s;
 }
 .time-1 {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 .time-2 {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 .time-3 {
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 .content {
@@ -187,20 +187,14 @@
 
     + .content {
         width: 100%;
-        
-        
+        transition: width   1s;    
     }
     ~ .content__logo {
         width: 0%;
         background-color: $tertiary-color;
         color: #fff;
-        font-size: 1.5rem;
-        transform-origin: right;
-        transform: scale(0, 1);
-        
-
-        
-        
+        font-size: 1.5rem; 
+        transition: width   1s;    
         i {
             transform: rotate(1turn);
             transition: transform 0.5s ease-in-out;
@@ -212,15 +206,15 @@
     
     + .content {
         width: 75%;
-       animation: validationBar__left-check 0.5s;
+        transition: width   1s;
     }
-    ~ .content__logo {
-        
+    ~ .content__logo {       
         width: 25%;
         background-color: $tertiary-color;
         color: #fff;
         font-size: 1.5rem;
         transform-origin: right;
+        transition: width   1s;
 
         i {
             transform: rotate(-1turn);
