@@ -1,11 +1,9 @@
 @keyframes submenuAnimation {
-    from {
-        transform: scale(0);
+    from { 
         transform: translateY(4rem);
         
     }
     to {
-        transform: scale(1);
         transform: translateY(0);
        
     }
@@ -24,7 +22,7 @@
 @keyframes icon {
     from {
       opacity: 0;
-      transform: scale(0.3);
+      transform: scale(0);
     }
     to {
       opacity: 1;
