@@ -14,14 +14,14 @@
         text-decoration: none;
         margin: 0;
         padding: 0;
-    }
-    &__lists a {
-        color: #fff;
-        text-decoration: none;
-    }
-    &__lists li {
-        list-style-type: none;
-        margin-bottom: 0.3rem;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 0.3rem;
+        }
     }
     &__icon {
         width: 1rem;

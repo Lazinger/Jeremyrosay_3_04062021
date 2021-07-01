@@ -47,20 +47,6 @@
         padding-left: 0;
         position: relative;
     }
-    &__list::before {
-        counter-increment: compteListe 1;
-        content: counter(compteListe) " ";
-        background-color: $primary-color;
-        color: #fff; 
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 2rem;  
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 0rem;
-    }
     &__list {
         display: flex;
         background-color: $light-grey;
@@ -69,6 +55,20 @@
         margin-bottom: 1.5rem;
         margin-left: 0.7rem;
         box-shadow: $shadow;
+        &::before {
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " ";
+            background-color: $primary-color;
+            color: #fff; 
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 2rem;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0rem;
+        }
     }
     &__icon {
         padding-left: 1.5rem;
