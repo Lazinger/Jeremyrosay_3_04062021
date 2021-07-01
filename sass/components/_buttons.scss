@@ -2,6 +2,20 @@
 @import '../abstracts/keyframes';
 
 
+.hero__button {
+  text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #fff;
+      background-image: linear-gradient($secondary-color,$primary-color);
+      box-shadow: $shadow;
+      &:hover {
+        filter: brightness(1.1);
+        box-shadow: $shadow-1;
+    }
+}
 
 .likeButton__checkbox {
     display: none;
@@ -15,25 +29,10 @@
         -webkit-text-fill-color: transparent;
     }
   }
-i.likeButton__icon {
+.likeButton__icon {
     opacity: 1;
     font-size: 1.5rem;
     color: #fff;
     transition: opacity .3s .1s ease;
     -webkit-text-stroke: 2px rgba(0,0,0,0.6);
-  }
-
-  .hero__button {
-    text-decoration: none;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-        color: #fff;
-        background-image: linear-gradient($secondary-color,$primary-color);
-        box-shadow: $shadow;
-        &:hover {
-          filter: brightness(1.1);
-          box-shadow: $shadow-1;
-      }
   }
