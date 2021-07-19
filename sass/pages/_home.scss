@@ -152,10 +152,15 @@
     .wrapper {
         max-width: 64rem;
         margin: auto;
+        &__card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
+
     .card {
-        max-width: 29rem;
-        display: inline-block;
+        width: 29rem;
         margin: 1rem;
     }
 }
